@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/css/jada.min.css" rel="stylesheet">
+    <meta name="theme-color" content="crimson">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="media/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="media/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/icon/favicon-16x16.png">
+    <link rel="manifest" href="media/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="media/icon/ms-icon-144x144.png">
+
+</head>
+<body>
+    <div>
+        <header>
+            <div class="nav big nav-crimson">
+                <div class="nav-hilfe nav-content">
+                    <div class="nav-header"><a href="#">JaDa Template</a></div>
+                    <ul>
+                        <li><a href="index.html">Getting Started</a>
+                        <li><a class="active" href="#">Components</a>
+                        <li><a href="../jadaTemplate.zip" download>Download</a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="content">
+            <div class="grid">
+
+
+                <div class="header">
+                    <h1>Buttons</h1>
+                </div>
+
+                Some basic buttons - called with <span class="marker">.bttns</span> - in different sizes and colors.
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <p>
+                            <input type="button" class="bttn bttn-xs bttn-red" value="XSmall">
+                            <input type="button" class="bttn bttn-sm bttn-red" value="Small">
+                            <input type="button" class="bttn bttn-red" value="Default">
+                            <input type="button" class="bttn bttn-lg bttn-red" value="Large">
+                        </p>
+                    </div>
+                    <div class="display-code">
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"button"</span>
+                        <span class="e">class=</span><span class="ep">"bttn bttn-xs bttn-red"</span>
+                        <span class="e">value=</span><span class="ep">"XSmall"</span><span class="t">&gt;</span><br>
+
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"button"</span>
+                        <span class="e">class=</span><span class="ep">"bttn bttn-sm bttn-red"</span>
+                        <span class="e">value=</span><span class="ep">"Small"</span><span class="t">&gt;</span><br>
+
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"button"</span>
+                        <span class="e">class=</span><span class="ep">"bttn bttn-red"</span>
+                        <span class="e">value=</span><span class="ep">"Default"</span><span class="t">&gt;</span><br>
+
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"button"</span>
+                        <span class="e">class=</span><span class="ep">"bttn bttn-lg bttn-red"</span>
+                        <span class="e">value=</span><span class="ep">"Large"</span><span class="t">&gt;</span><br>
+
+                    </div>
+
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/buttons/index.html">Show all examples</a>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="header">
+                    <h1>Banner</h1>
+                </div>
+
+                A simple Banner with different colors, a title and a subtext.
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <div class="banner">
+                            <h1>Banner title</h1>
+                            <p>Banner subtext</p>
+                        </div>
+                    </div>
+                    <div class="display-code">
+                        <span class="t">&lt;div</span>
+                        <span class="e">class=</span><span class="ep">"banner"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="t">&lt;h1&gt;</span>Banner title<span class="t">&lt;/h1&gt;</span><br>
+                        <span class="tab"></span><span class="t">&lt;p&gt;</span>Banner subtext<span class="t">&lt;/p&gt;</span><br>
+                        <span class="t">&lt;/div&gt;</span>
+                    </div>
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/banner/index.html">Show all examples</a>
+                    </div>
+                </div>
+
+                If you place the <span class="marker">.banner</span> around the <span class="marker">.grid</span>, the banner
+                will enlarge to the full width
+                and the corners are not rounded (for more, look up the examples).
+
+                <div class="coding-html">
+                    <div class="display-code">
+                        <span class="t">&lt;div</span>
+                        <span class="e">class=</span><span class="ep">"banner"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="t">&lt;div</span>
+                        <span class="e">class=</span><span class="ep">"grid"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="t">&lt;h1&gt;</span>Block title<span class="t">&lt;/h1&gt;</span><br>
+                        <span class="tab"></span><span class="tab"></span><span class="t">&lt;p&gt;</span>Block subtext<span class="t">&lt;/p&gt;</span><br>
+                        <span class="tab"></span><span class="t">&lt;/div&gt;</span><br>
+                        <span class="t">&lt;/div&gt;</span>
+                    </div>
+
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/banner/index.html">Show all examples</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="header">
+                    <h1>Input</h1>
+                </div>
+
+                Basic styling of inputs and forms.<br><br>
+
+                <h1>Input Styles</h1>
+
+                There are 2 different styles available, a rather normal one and one with only the underline.
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <input type="text" class="input-style" placeholder="input-style default">
+                        <br>
+                        <input type="text" class="input-underline" placeholder="input-underline default">
+                    </div>
+                    <div class="display-code">
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"text"</span>
+                        <span class="e">class=</span><span class="ep">"input-style"</span><span class="t">&gt;</span><br>
+                        <br>
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"text"</span>
+                        <span class="e">class=</span><span class="ep">"input-underline"</span><span class="t">&gt;</span><br>
+                    </div>
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/forms/index.html">Show all examples</a>
+                    </div>
+                </div>
+
+
+                <br><br>
+                <h1>Forms</h1>
+
+                Classic and simple form.
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <form class="form-style-classy">
+                            <div class="form-header-black">
+                                Login
+                            </div>
+                            <div class="form-body">
+                                <input type="text" class="input-underline" placeholder="name">
+                                <input type="password" class="input-underline" placeholder="password">
+                                <br><br>
+                                <input type="submit" value="Login" class="bttn bttn-blue">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="display-code">
+                        <!-- form start-->
+                        <span class="t">&lt;form</span>
+                        <span class="e">class=</span><span class="ep">"form-style-classy"</span><span class="t">&gt;</span><br>
+
+                        <!-- header start-->
+                        <span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">class=</span><span class="ep">"form-header-black"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        Login<br>
+
+                        <span class="tab"></span>
+                        <span class="t">&lt;/div&gt;</span><br>
+
+                        <!-- header end
+                            body start-->
+                        <span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">class=</span><span class="ep">"form-body"</span><span class="t">&gt;</span><br>
+
+                        <!-- input fields start
+                            text-->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"text"</span>
+                        <span class="e">class=</span><span class="ep">"input-underline"</span><span class="t">&gt;</span><br>
+
+                        <!-- password -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"password"</span>
+                        <span class="e">class=</span><span class="ep">"input-underline"</span><span class="t">&gt;</span><br>
+
+                        <!-- submit -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;input</span>
+                        <span class="e">type=</span><span class="ep">"submit"</span>
+                        <span class="e">value=</span><span class="ep">"Login"</span>
+                        <span class="e">class=</span><span class="ep">"bttn bttn-blue"</span><span class="t">&gt;</span><br>
+                        <!-- input fields end -->
+
+                        <span class="tab"></span>
+                        <span class="t">&lt;/div&gt;</span><br>
+                        <!-- body end
+                            form end-->
+
+                        <span class="t">&lt;/form&gt;</span><br>
+
+                    </div>
+
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/forms/index.html">Show all examples</a>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="header">
+                    <h1>Infoboxes</h1>
+                </div>
+
+                Highlight with <span class="marker">.teaser</span> or <span class="marker">.highlight </span> important text.
+
+                <br><br>
+                <h1>Teaser</h1>
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <p class="teaser">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                        </p>
+                        <p class="teaser-stripes">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                        </p>
+                    </div>
+                    <div class="display-code">
+                        <!-- teaser -->
+                        <span class="t">&lt;p</span>
+                        <span class="e">class=</span><span class="ep">"teaser"</span><span class="t">&gt;</span><br>
+                        <span class="tab"></span>...<br>
+                        <span class="t">&lt;/p&gt;</span><br>
+                        <br>
+
+                        <!-- teaser-stripes -->
+                        <span class="t">&lt;p</span>
+                        <span class="e">class=</span><span class="ep">"teaser-stripes"</span><span class="t">&gt;</span><br>
+                        <span class="tab"></span>...<br>
+                        <span class="t">&lt;/p&gt;</span>
+
+                    </div>
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/infoboxes/index.html">Show all examples</a>
+                    </div>
+                </div>
+                <br><br>
+
+                <h1>Highlight</h1>
+                <div class="coding-html">
+                    <div class="display-example">
+                        <p class="highlight">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                        </p>
+                        <p class="highlight h-double">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                        </p>
+                        <p class="highlight h-shadow">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                        </p>
+                        <p class="highlight h-shadow h-double">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                        </p>
+                    </div>
+                    <div class="display-code">
+                        <span class="t">&lt;p</span>
+                        <span class="e">class=</span><span class="ep">"highlight"</span><span class="t">&gt;</span><br>
+                        <span class="tab"></span>...<br>
+                        <span class="t">&lt;/p&gt;</span>
+                        <br>
+                        <span class="t">&lt;p</span>
+                        <span class="e">class=</span><span class="ep">"highlight h-double"</span><span class="t">&gt;</span><br>
+                        <span class="tab"></span>...<br>
+                        <span class="t">&lt;/p&gt;</span>
+                        <br>
+                        <span class="t">&lt;p</span>
+                        <span class="e">class=</span><span class="ep">"highlight h-shadow"</span><span class="t">&gt;</span><br>
+                        <span class="tab"></span>...<br>
+                        <span class="t">&lt;/p&gt;</span>
+                        <br>
+                        <span class="t">&lt;p</span>
+                        <span class="e">class=</span><span class="ep">"highlight h-shadow h-double"</span><span class="t">&gt;</span><br>
+                        <span class="tab"></span>...<br>
+                        <span class="t">&lt;/p&gt;</span>
+                    </div>
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/infoboxes/index.html">Show all examples</a>
+                    </div>
+                </div>
+
+
+
+                <div class="header">
+                    <h1>Panel</h1>
+                </div>
+
+                Hide an show different panels with only 1 click.
+
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <ul class="panel">
+                            <li>
+                                <div id="nav1" class="panel-head">
+                                    Panel 1
+                                </div>
+
+                                <div id="panel1" class="panel-content">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                </div>
+                            </li>
+                            <li>
+                                <div id="nav2" class="panel-head">
+                                    Panel 2
+                                </div>
+
+                                <div id="panel2" class="panel-content">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                </div>
+                            </li>
+                            <li>
+                                <div id="nav3" class="panel-head">
+                                    Panel 3
+                                </div>
+
+                                <div id="panel3" class="panel-content">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="display-code">
+                        <span class="t">&lt;ul</span>
+                        <span class="e">class=</span><span class="ep">"panel"</span><span class="t">&gt;</span><br>
+
+                        <!------------- Panel 1 ------------>
+                        <span class="tab"></span>
+                        <span class="t">&lt;li&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">id=</span><span class="ep">"nav1"</span>
+                        <span class="e">class=</span><span class="ep">"panel-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        Panel 1<br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/div</span><br>
+
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">id=</span><span class="ep">"panel1"</span>
+                        <span class="e">class=</span><span class="ep">"panel-content"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        Lorem ipsum<br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/div</span><br>
+
+
+                        <span class="tab"></span>
+                        <span class="t">&lt;/li&gt;</span><br>
+
+
+
+                        <!------------- Panel 2 ------------>
+                        <span class="tab"></span>
+                        <span class="t">&lt;li&gt;</span><br>
+
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">id=</span><span class="ep">"nav2"</span>
+                        <span class="e">class=</span><span class="ep">"panel-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        Panel 2<br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/div</span><br>
+
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">id=</span><span class="ep">"panel2"</span>
+                        <span class="e">class=</span><span class="ep">"panel-content"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        Lorem ipsum<br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/div</span><br>
+
+
+                        <span class="tab"></span>
+                        <span class="t">&lt;/li&gt;</span><br>
+
+
+
+                        <!------------- Panel 3 ------------>
+                        <span class="tab"></span>
+                        <span class="t">&lt;li&gt;</span><br>
+                        <span class="tab"></span><span class="tab"></span>...<br>
+                        <span class="tab"></span>
+                        <span class="t">&lt;/li&gt;</span><br>
+                        <span class="t">&lt;/ul&gt;</span>
+                    </div>
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/panel/index.html">Show all examples</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="header">
+                    <h1>Library</h1>
+                </div>
+
+                Switch threw different contents by simply clicking the horizontal placed headers.
+                On smaller screens, the library headers will be positioned vertically.
+
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <div  class="library">
+                            <ul>
+                                <li>
+                                <span id="lib-nav1" class="lib-head">
+                                    Header 1
+                                    <img id="lib-active1" src="media/glyphicons/active-icon2.png">
+                                </span>
+                                </li>
+                                <li>
+                                <span id="lib-nav2" class="lib-head">
+                                    Header 2
+                                    <img id="lib-active2" src="media/glyphicons/active-icon2.png">
+                                </span>
+                                </li>
+                                <li>
+                                <span id="lib-nav3" class="lib-head">
+                                    Header 3
+                                    <img id="lib-active3" src="media/glyphicons/active-icon2.png">
+                                </span>
+                                </li>
+                            </ul>
+                            <div id="lib1" class="lib-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren.
+                            </div>
+                            <div id="lib2" class="lib-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren.
+                            </div>
+                            <div id="lib3" class="lib-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-code">
+                        <!-- start -->
+                        <span class="t">&lt;div</span>
+                        <span class="e">class=</span><span class="ep">"library"</span>
+                        <span class="t">&gt;</span><br>
+
+                        <!-- ul beginning-->
+                        <span class="tab"></span>
+                        <span class="t">&lt;ul</span><span class="t">&gt;</span><br>
+
+                        <!-- li 1 beginning -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;li</span><span class="t">&gt;</span><br>
+
+                        <!-- li 1 header -->
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;span</span>
+                        <span class="e">id=</span><span class="ep">"lib-nav1"</span>
+                        <span class="e">class=</span><span class="ep">"lib-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        Header 1<br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/span&gt;</span><br>
+
+                        <!-- li 1 end -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/li&gt;</span><br>
+
+
+
+                        <!-- li2 beginning -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;li</span><span class="t">&gt;</span><br>
+
+                        <!-- li 2 header -->
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;span</span>
+                        <span class="e">id=</span><span class="ep">"lib-nav2"</span>
+                        <span class="e">class=</span><span class="ep">"lib-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        Header 2<br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/span&gt;</span><br>
+
+                        <!-- li 2 end -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/li&gt;</span><br>
+
+
+
+                        <!-- li 3 beginning -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;li</span><span class="t">&gt;</span><br>
+
+                        <!-- li 3 header -->
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;span</span>
+                        <span class="e">id=</span><span class="ep">"lib-nav3"</span>
+                        <span class="e">class=</span><span class="ep">"lib-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        Header 3<br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/span&gt;</span><br>
+
+                        <!-- li 3 end -->
+                        <span class="tab"></span><span class="tab"></span>
+                        <span class="t">&lt;/li&gt;</span><br>
+
+
+                        <!-- ul end -->
+                        <span class="tab"></span>
+                        <span class="t">&lt;/ul&gt;</span><br>
+
+
+                        <!-- li 1 content -->
+                        <span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">id=</span><span class="ep">"lib-nav1"</span>
+                        <span class="e">class=</span><span class="ep">"lib-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        Content for header 1<br>
+                        <span class="tab"></span>
+                        <span class="t">&lt;/div&gt;</span><br>
+
+                        <!-- li 2 content -->
+                        <span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">id=</span><span class="ep">"lib-nav2"</span>
+                        <span class="e">class=</span><span class="ep">"lib-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        Content for header 2<br>
+                        <span class="tab"></span>
+                        <span class="t">&lt;/div&gt;</span><br>
+
+                        <!-- li 3 content -->
+                        <span class="tab"></span>
+                        <span class="t">&lt;div</span>
+                        <span class="e">id=</span><span class="ep">"lib-nav3"</span>
+                        <span class="e">class=</span><span class="ep">"lib-head"</span><span class="t">&gt;</span><br>
+
+                        <span class="tab"></span><span class="tab"></span>
+                        Content for header 3<br>
+                        <span class="tab"></span>
+                        <span class="t">&lt;/div&gt;</span><br>
+
+                        <!-- end -->
+                        <span class="t">&lt;div&gt;</span>
+
+
+
+                    </div>
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/library/index.html">Show all examples</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="header">
+                    <h1>Thumbnail</h1>
+                </div>
+
+                The image is resized to a small preview and onclick, the image enlarges responsive to the screen size.
+
+                <div class="coding-html">
+                    <div class="display-example">
+                        <div class="thumbnail">
+                            <img class="responsive-img" src="media/1.jpg">
+                        </div>
+                    </div>
+                    <div class="display-code">
+
+                        <span class="t">&lt;div</span>
+                        <span class="e">class=</span><span class="ep">"thumbnail"</span><span class="t">&gt;</span><br>
+
+
+                        <span class="tab"></span>
+                        <span class="t">&lt;img</span>
+                        <span class="e">src=</span><span class="ep">"source/source.jpg"</span>
+                        <span class="t">&gt;</span><br>
+
+
+
+                        <span class="t">&lt;/div&gt;</span><br>
+
+
+
+                    </div>
+                    <div class="coding-link">
+                        <a target="_blank" href="examples/thumbnails/index.html">Show all examples</a>
+                    </div>
+                </div>
+
+
+                <!-- grid end-->
+            </div>
+        </div>
+
+
+
+
+        <!--jquery -->
+        <script src="jquery/jquery-2.1.1.js"></script>
+        <!--jada js -->
+        <script src="dist/js/jada.min.js"></script>
+    </div>
+</body>
+</html>

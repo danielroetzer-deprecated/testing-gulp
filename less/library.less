@@ -1,0 +1,123 @@
+
+.library{
+  .library-variation(@main-color-default);
+}
+.library-red{
+  .library-variation(@main-color-red);
+}
+.library-black{
+  .library-variation(@main-color-black);
+}
+.library-blue{
+  .library-variation(@main-color-blue);
+}
+.library-purple{
+  .library-variation(@main-color-purple);
+}
+.library-green{
+  .library-variation(@main-color-green);
+}
+
+
+.library-variation(@bgcolor){
+  margin: 50px 0;
+  box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
+  border-radius: 4px;
+
+  @media screen and (max-width: @screen-small-min) {
+    text-align: center;
+  }
+
+
+  & ul{
+    list-style: none;
+    background: @bgcolor;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+
+    @media screen and (max-width: @screen-small-min) {
+      padding: 0;
+    }
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+
+  //
+  & li{
+    display: inline;
+    padding-top: 25px;
+    padding-bottom: 7px;
+
+    @media screen and (max-width: @screen-medium-min) {
+      //padding-top: 19px;
+      //padding-bottom: 5px;
+    }
+
+    @media screen and (max-width: @screen-small-min) {
+      display: list-item;
+      padding: 3px 0;
+    }
+
+
+
+    &:hover{
+      background-color: lighten(@bgcolor,5%);
+    }
+
+    & #lib-nav1{
+      background-color: darken(@bgcolor,5%);
+      color: white;
+
+    }
+
+
+    //Headers which are always shown
+    & .lib-head{
+      padding: 15px 20px 5px 20px;
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: 500;
+      color: #E7E7E7;
+
+      font-family: 'Open Sans Bold', sans-serif;
+
+      text-align: center;
+
+
+      @media screen and (max-width: @screen-medium-min) {
+        padding: 15px 10px 5px 10px;
+      }
+
+      @media screen and (max-width: @screen-small-min) {
+        font-size: 20px;
+        padding: 3px 20px;
+      }
+
+
+      & img{
+        padding-left: 5px;
+        position: relative;
+        bottom: 5px;
+
+        @media screen and (max-width: @screen-medium-min) {
+          position: static;
+        }
+      }
+    }
+
+  }
+
+  //The content of the headers
+  & .lib-content{
+    padding: 10px 40px 20px 40px;
+    text-align: justify;
+    hyphens: auto;
+
+    @media screen and (max-width: 450px) {
+      text-align: left;
+    }
+  }
+}

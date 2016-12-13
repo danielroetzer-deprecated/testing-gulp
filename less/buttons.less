@@ -1,0 +1,99 @@
+
+/////////////////////////////////
+//      Buttons                //
+////////////////////////////////
+
+//Default button specifications
+.bttn{
+
+  color: @bttn-default-color;
+  background-color: @bttn-default-bg;
+  cursor: pointer;
+  font-weight: @bttn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  border: 0;
+  font-size: @font-size-default;
+
+  padding: @padding-default-vertical @padding-default-horizontal;
+  line-height: @line-height-default;
+  border-radius: @border-radius-base;
+
+  text-decoration: none;
+
+
+  //Default hover effect
+  &:hover{
+      background-color: lighten(@bttn-default-bg,8%);
+  }
+}
+
+//Default values are overwritten if classes for a specific color or size are called
+
+//Size Mixin
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+	padding: @padding-vertical @padding-horizontal;
+	font-size: @font-size;
+	line-height: @line-height;
+	border-radius: @border-radius;
+}
+
+//Color Mixin
+.button-variant(@color; @background) {
+	color: @color;
+	background-color: @background;
+}
+
+//The Size Mixin is called with different parameters
+.bttn-lg {
+	.button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+.bttn-sm {
+	.button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.bttn-xs {
+	.button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+
+//The Color Mixin is called with different parameters
+.bttn-black {
+	.button-variant(@bttn-black-color; @bttn-black-bg);
+	
+	&:hover{
+		background-color: lighten(@bttn-black-bg,12%);
+	}
+}
+
+.bttn-blue {
+	.button-variant(@bttn-blue-color; @bttn-blue-bg);
+	
+	&:hover{
+		background-color: lighten(@bttn-blue-bg,12%);
+	}
+}
+
+.bttn-purple {
+	.button-variant(@bttn-purple-color; @bttn-purple-bg);
+	
+	&:hover{
+		background-color: lighten(@bttn-purple-bg,12%);
+	}
+}
+
+.bttn-green {
+	.button-variant(@bttn-green-color; @bttn-green-bg);
+
+	&:hover{
+		background-color: lighten(@bttn-green-bg,12%);
+	}
+}
+
+.bttn-red {
+  .button-variant(@bttn-red-color; @bttn-red-bg);
+
+  &:hover{
+    background-color: lighten(@bttn-red-bg,12%);
+  }
+}
+
+

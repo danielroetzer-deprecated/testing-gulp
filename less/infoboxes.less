@@ -1,0 +1,61 @@
+/////////////////////////////////
+//      Infoboxes             //
+////////////////////////////////
+
+.teaser{
+  background-color: #F5F5F5;
+  font-style: italic;
+  padding: 15px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.teaser-stripes{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.highlight{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 15px 20px;
+  border-left: 6px solid @main-color-default;
+}
+
+.h-shadow{
+  box-shadow: 0 2px 2px #ddd;
+}
+
+.h-double{
+  border-left: 6px solid @main-color-default;
+  border-right: 6px solid @main-color-default;
+}
+
+
+//Border Color Call
+.h-red{
+  .highlight-variation(@main-color-red)
+}
+.h-black{
+  .highlight-variation(@main-color-black)
+}
+.h-blue{
+  .highlight-variation(@main-color-blue)
+}
+.h-purple{
+  .highlight-variation(@main-color-purple)
+}
+.h-green{
+  .highlight-variation(@main-color-green)
+}
+
+//Border Color Mixin
+.highlight-variation(@color){
+  border-color: @color;
+}

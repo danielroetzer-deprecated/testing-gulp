@@ -1,0 +1,78 @@
+/////////////////////////////////
+//      Block                  //
+////////////////////////////////
+
+
+.banner{
+  .banner-variant(@block-bgcolor-default,@block-color-default)
+}
+
+.banner-red{
+  .banner-variant(@block-bgcolor-red,@block-color-red)
+}
+
+.banner-black{
+  .banner-variant(@block-bgcolor-black,@block-color-black)
+}
+
+.banner-blue{
+  .banner-variant(@block-bgcolor-blue,@block-color-blue)
+}
+
+.banner-purple{
+  .banner-variant(@block-bgcolor-purple,@block-color-purple)
+}
+
+.banner-green{
+  .banner-variant(@block-bgcolor-green,@block-color-green)
+}
+
+
+
+.banner-variant(@bgcolor,@font-color){
+  margin-bottom: 40px;
+  padding: (@block-padding) (@block-padding / 2);
+  background-color: @bgcolor;
+  color: @font-color;
+
+  & h1{
+    font-weight: 500;
+    font-size: 42px;
+    margin-bottom: -20px;
+  }
+
+  & p{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+
+  .grid &{
+    border-radius: 10px;
+  }
+
+
+  //If the screen is larger than small
+  @media (min-width: @screen-small-min) {
+    padding: (@block-padding * 2.5) (@block-padding / 2);
+
+    .grid &{
+      padding-left:  (@block-padding * 2);
+      padding-right: (@block-padding * 2);
+    }
+
+    h1,
+    .h1 {
+      font-size: 60px;
+      font-weight: normal;
+    }
+
+    p,
+    .p {
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+
+  }
+}

@@ -1,0 +1,66 @@
+/////////////////////////////////
+//      Panel                  //
+////////////////////////////////
+
+
+.panel{
+  .panel-variant(@main-color-default)
+}
+.panel-red{
+  .panel-variant(@main-color-red)
+}
+.panel-black{
+  .panel-variant(@main-color-black)
+}
+.panel-blue{
+  .panel-variant(@main-color-blue)
+}
+.panel-purple{
+  .panel-variant(@main-color-purple)
+}
+.panel-green{
+  .panel-variant(@main-color-green)
+}
+
+
+.panel-variant(@bgcolor){
+  margin: 50px 0;
+  list-style: none;
+  padding: 0;
+
+  //Creating a small border between Panel Elements
+  & li{
+    padding-bottom: 1px;
+
+    //Headers which are always shown
+    & .panel-head{
+      margin: 0;
+      padding: 10px 20px;
+      background-color: @bgcolor;
+      cursor: pointer;
+      color: white;
+      font-size: 25px;
+      font-weight: 500;
+      font-family: 'Open Sans Bold', sans-serif;
+
+      text-align: center;
+
+      @media screen and (max-width: @screen-small-min) {
+        font-size: 20px;
+        padding: 8px 15px;
+      }
+    }
+
+    //The content of the headers
+    & .panel-content{
+      padding: 10px 20px;
+      margin: 15px 25px;
+      text-align: justify;
+      hyphens: auto;
+
+      @media screen and (max-width: 450px) {
+        text-align: left;
+      }
+    }
+  }
+}

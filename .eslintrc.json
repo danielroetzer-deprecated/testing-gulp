@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "warn",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "off",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    },
+    //You need to specify this global used variables
+    //Otherwise you will get a lot errors
+    "globals": {
+        "$": false,
+        "jQuery": false
+    }
+}
