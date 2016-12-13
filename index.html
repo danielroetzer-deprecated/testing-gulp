@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Getting started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/css/jada.min.css" rel="stylesheet">
+    <meta name="theme-color" content="crimson">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="media/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="media/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/icon/favicon-16x16.png">
+    <link rel="manifest" href="media/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="media/icon/ms-icon-144x144.png">
+</head>
+<body>
+    <div>
+
+        <header>
+            <div class="nav big nav-crimson">
+                <div class="nav-hilfe nav-content">
+                    <div class="nav-header"><a href="#">JaDa Template</a></div>
+                    <ul>
+                        <li><a class="active" href="#">Getting Started</a>
+                        <li><a href="components.html">Components</a>
+                        <li><a href="../jadaTemplate.zip" download>Download</a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="grid">
+                <div class="header">
+                    <h1>Downloading</h1>
+                </div>
+
+                Simply click de "Download" button in the navbar or the button below and you will get the CSS, JS and font files.
+                <br><br>
+                <a href="../jadaTemplate.zip" download class="bttn bttn-blue">Download</a>
+
+                <div class="header">
+                    <h1>Integrate files</h1>
+                </div>
+
+                You need to integrate the CSS files into the HEAD of your HTML. Furthermore a "viewport" is needed,
+                to make sure the website functions correctly on smartphones with a high screen resolution.
+
+                <div class="coding2">
+                    <div class="display-code">
+                        <span class="t">&lt;link</span>
+                        <span class="e">href=</span><span class="ep">"source/jada.min.css"</span>
+                        <span class="e">rel=</span><span class="ep">"stylesheet"</span><span class="t">&gt;</span>
+                        <br>
+
+                        <span class="t">&lt;meta</span>
+                        <span class="e">name=</span><span class="ep">"viewport"</span>
+                        <span class="e">content=</span><span class="ep">"width=device-width, initial-scale=1"</span><span class="t">&gt;</span>
+                    </div>
+                </div>
+
+                To ensure the website is loaded quickly, integrate the JS files at the bottom of your BODY.
+                Download the JQuery file or integrate it with the direct link.
+
+                <div class="coding2">
+                    <div class="display-code">
+                        <span class="t">&lt;script</span>
+                        <span class="e">src=</span><span class="ep">"source/jada.min.js"</span><span class="t">&gt;</span>
+                        <span class="t">&lt;/script&gt;</span><br>
+
+
+                        <span class="t">&lt;script</span>
+                        <span class="e">src=</span><span class="ep">"http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"</span><span class="t">&gt;</span>
+                        <span class="t">&lt;/script&gt;</span><br>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!--jquery -->
+        <script src="jquery/jquery-2.1.1.js"></script>
+        <!--jada js -->
+        <script src="dist/js/jada.min.js"></script>
+    </div>
+</body>
+</html>

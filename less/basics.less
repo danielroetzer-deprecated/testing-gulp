@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-top: 20px;
+}
+
+
+//auer
+.magenta{
+  .color(@magenta);
+}
+
+.mediumseagreen{
+  .color(@mediumseagreen);
+}
+
+.crimson{
+  .color(@crimson);
+}
+
+.color(@color){
+  background-color: @color;
+  color: @white;
+  border-bottom: 1px solid @color - #111111;
+  border-top: 1px solid @color - #111111;
+
+  a{
+    color: @white;
+  }
+}

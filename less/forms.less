@@ -1,0 +1,126 @@
+/////////////////////////////////
+//      Forms                  //
+////////////////////////////////
+
+
+.input-style {
+  font-size: @input-font-size-default;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  appearance: none;
+  box-shadow: none;
+
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+
+  &:focus,
+  &.focus {
+    outline: none;
+    border: solid 1px #707070;
+    box-shadow: 0 0 2px 1px #969696;
+  }
+}
+
+.input-underline {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 0 10px 10px;
+  border: none;
+
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+
+  &:focus,
+  &.focus {
+    outline: none;
+    border-bottom: solid 2px #0f0f0f;
+  }
+
+}
+
+
+
+//Size Mixin
+.input-size(@font-size) {
+  font-size: @font-size;
+}
+
+//Size Call
+.input-lg {
+  .input-size(@input-font-size-large);
+}
+
+.input-sm {
+  .input-size(@input-font-size-small);
+}
+
+
+
+.form-style-classy {
+  border-radius: 4px;
+  box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14);
+  margin: 50px auto;
+  width: 400px;
+
+  @media screen and (max-width: 482px) {
+    width: 98%;
+  }
+
+
+  & input[type="text"],
+  input[type="password"]{
+    width: 100%-4px;
+  }
+
+
+  .form-header {
+    .form-head-variant(@main-color-default)
+  }
+
+  .form-header-red {
+    .form-head-variant(@main-color-red)
+  }
+
+  .form-header-black {
+    .form-head-variant(@main-color-black)
+  }
+
+  .form-header-blue {
+    .form-head-variant(@main-color-blue)
+  }
+
+  .form-header-purple {
+    .form-head-variant(@main-color-purple)
+  }
+
+  .form-header-green {
+    .form-head-variant(@main-color-green)
+  }
+
+  & .form-body{
+    padding: 10px 50px 30px 50px;
+  }
+
+}
+
+
+.form-head-variant(@bgcolor){
+  background-color: @bgcolor;
+  font-size: 25px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  padding: 15px 5px 10px 25px;
+
+  color: white;
+  font-weight: bold;
+
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+
+
+
+

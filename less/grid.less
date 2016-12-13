@@ -1,0 +1,51 @@
+//Later divided in half, for left and right
+@grid-width-padding:         30px;
+
+
+//This are the widths the grid has, when @media queries are applied
+
+// Small screen --> tablet
+@grid-tablet:             (720px + @grid-width-padding);
+@grid-small:              @grid-tablet;
+
+// Medium screen --> desktop
+@grid-desktop:            (940px + @grid-width-padding);
+@grid-medium:             @grid-desktop;
+
+// Large screen --> wide desktop
+@grid-large-desktop:      (1140px + @grid-width-padding);
+@grid-large:              @grid-large-desktop;
+
+
+
+//Minimum values for @media queries
+
+//Small screen --> tablet
+@screen-small-min:              768px;
+
+// Medium screen --> desktop
+@screen-medium-min:             992px;
+
+// Large screen --> wide desktop
+@screen-large-min:              1200px;
+
+
+
+//Default values + @media values depending on screen size
+.grid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (@grid-width-padding / 2);
+  padding-right: (@grid-width-padding / 2);
+  &:extend(.clearfix all);
+
+  @media (min-width: @screen-small-min) {
+    width: @grid-small;
+  }
+  @media (min-width: @screen-medium-min) {
+    width: @grid-medium;
+  }
+  @media (min-width: @screen-large-min) {
+    width: @grid-large;
+  }
+}

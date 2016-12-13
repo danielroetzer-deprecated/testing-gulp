@@ -1,0 +1,53 @@
+
+/////////////////////////////////
+//      Header                 //
+////////////////////////////////
+
+.header{
+  .header-variant(#000)
+}
+.header-red{
+  .header-variant(@header-title-red)
+}
+.header-green{
+  .header-variant(@header-title-green)
+}
+.header-blue{
+  .header-variant(@header-title-blue)
+}
+.header-purple{
+  .header-variant(@header-title-purple)
+}
+.header-black{
+  .header-variant(@header-title-black)
+}
+
+//Color Mixin
+.header-variant(@color) {
+  padding-bottom: @header-padding-bottom;
+  margin-bottom: @header-margin-bottom;
+  margin-top: 70px;
+  border-bottom: @header-border-width @header-border-style @header-border-color;
+
+  & h1,h2,h3,h4,h5,h6,.title{
+    display: inline;
+    margin-right: @header-margin-right;
+    color: @color;
+  }
+
+  & h1{
+    display: inline;
+    font-size: 45px;
+
+    @media screen and (max-width: @screen-small-min) {
+      font-size: 35px;
+    }
+
+  }
+
+  & p,small{
+    display: inline;
+    color: @header-subtext-default-color;
+  }
+}
+
