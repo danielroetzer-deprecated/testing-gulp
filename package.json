@@ -6,8 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "DR",
-  "license": "ISC",
+  "author": "Daniel Rötzer",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielroetzer/GulpTest.git"
+  },
+  "keywords": [
+    "Gulp"
+  ],
+  "bugs": {
+    "url": "https://github.com/danielroetzer/GulpTest/issues"
+  },
+  "homepage": "https://github.com/danielroetzer/GulpTest#readme",
   "devDependencies": {
     "eslint": "^3.12.0",
     "gulp": "^3.9.1",
