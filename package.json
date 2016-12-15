@@ -1,5 +1,5 @@
 {
-  "name": "gulp-test",
+  "name": "testing-gulp",
   "version": "1.0.0",
   "description": "Testing Gulp",
   "main": "index.html",
@@ -10,15 +10,15 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielroetzer/GulpTest.git"
+    "url": "git+https://github.com/danielroetzer/testing-gulp.git"
   },
   "keywords": [
     "Gulp"
   ],
   "bugs": {
-    "url": "https://github.com/danielroetzer/GulpTest/issues"
+    "url": "https://github.com/danielroetzer/testing-gulp/issues"
   },
-  "homepage": "https://github.com/danielroetzer/GulpTest#readme",
+  "homepage": "https://github.com/danielroetzer/testing-gulp#readme",
   "devDependencies": {
     "eslint": "^3.12.0",
     "gulp": "^3.9.1",
